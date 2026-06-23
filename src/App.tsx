@@ -54,10 +54,10 @@ const education = [
 ];
 const certifications = ["AWS — Cloud Fundamentals","MongoDB — Database Management","Artificial Intelligence","Python Programming","Adobe Photoshop"];
 const psWorks = [
-  { title:"Naira — Movie Poster", category:"Poster Design", description:"Cinematic movie poster with dramatic lion compositing, duotone colour grading and bold typography.", src:"/ps/Ab.jpg" },
-  { title:"Divya Bharathi — Portrait Art", category:"Photo Manipulation", description:"Fantasy portrait edit with enchanted forest background and silk fabric compositing.", src:"/ps/db.jpg" },
-  { title:"Divine Composition", category:"Digital Art", description:"High-resolution devotional digital artwork with atmospheric lighting and layered compositing.", src:"/ps/god-Recovered-1.jpg" },
-  { title:"Wedding Memories", category:"Photo Edit", description:"Vibrant wedding photo collage with multi-layer compositing and cinematic atmosphere.", src:"/ps/omg.jpg" },
+  { title:"Naira — Movie Poster", category:"Poster Design", description:"Cinematic movie poster with dramatic lion compositing, duotone colour grading and bold typography.", src:"/divya-portfolio/ps/Ab.jpg" },
+  { title:"Divya Bharathi — Portrait Art", category:"Photo Manipulation", description:"Fantasy portrait edit with enchanted forest background and silk fabric compositing.", src:"/divya-portfolio/ps/db.jpg" },
+  { title:"Divine Composition", category:"Digital Art", description:"High-resolution devotional digital artwork with atmospheric lighting and layered compositing.", src:"/divya-portfolio/ps/god-Recovered-1.jpg" },
+  { title:"Wedding Memories", category:"Photo Edit", description:"Vibrant wedding photo collage with multi-layer compositing and cinematic atmosphere.", src:"/divya-portfolio/ps/omg.jpg" },
 ];
 const bgParticles = Array.from({length:10},(_,i)=>({
   id:i, x:Math.random()*100, y:Math.random()*100,
@@ -570,7 +570,7 @@ function Footer() {
         <div>
           <p style={{fontSize:11,letterSpacing:"0.24em",textTransform:"uppercase" as const,color:VIOLET,marginBottom:16,fontWeight:500}}>Connect</p>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"8px 40px"}}>
-            {[["LinkedIn","https://linkedin.com/in/divyabharathiofficial"],["GitHub","https://github.com/divyabharathiofficial-13"],["Email","mailto:divyabharathi.official13@gmail.com"],["Resume","#"]].map(([l,h])=>(
+            {[["LinkedIn","https://linkedin.com/in/divyabharathiofficial"],["GitHub","https://github.com/divyabharathiofficial-13"],["Email","mailto:divyabharathi.official13@gmail.com"],["Resume","public/Divya_Bharathi_SoftwareEngineer_Resume.docx"]].map(([l,h])=>(
               <a key={l} href={h} target="_blank" rel="noopener noreferrer" style={{fontSize:14,color:MUTED,textDecoration:"none",transition:"color 0.2s"}}>{l}</a>
             ))}
           </div>
